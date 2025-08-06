@@ -56,3 +56,43 @@ This project predicts which insurance policyholders are likely to cancel their p
 ## Documentation
 - API documentation available at `/docs` when backend is running
 - Update this README as features evolve
+
+## Project Generation Prompt
+
+```
+Customer Churn Prediction Web Application
+
+Goal:
+Build a full-stack web application to predict which insurance policyholders are likely to cancel their policies. The app should use customer engagement metrics, claim patterns, and payment history to assess churn risk. Results will help design retention strategies and offer targeted incentives to high-risk customers.
+
+Features:
+- Backend API (FastAPI):
+  - CRUD operations for customer records
+  - Churn prediction endpoint using a trained ML model
+  - Business logic for risk scoring
+  - Data validation and error handling
+- Machine Learning Model:
+  - Train a model using customer engagement, claims, and payment history
+  - Save and load model for inference
+  - Update churn risk scores for all customers
+- Frontend (React):
+  - UI for entering customer data and viewing predictions
+  - Customer management (view, add, edit, delete)
+  - Display churn risk scores and insights
+  - Visualization (charts, tables)
+- Data:
+  - Scripts to populate and manage sample data
+- Testing:
+  - Unit and integration tests for backend and frontend
+- Documentation:
+  - Clear setup, usage, and API instructions
+  - Project prompt and requirements
+
+Tech Stack:
+- Python (FastAPI, scikit-learn, pandas, SQLAlchemy)
+- React (UI, Axios, Chart.js)
+- SQLite (local database)
+
+Outcome:
+A maintainable, extensible web application for insurance customer churn prediction, with a clean codebase and clear documentation.
+```
