@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+.ipynb_checkpoints
+
+# Node
+node_modules/
+build/
+.env
+
+# Data
+*.csv
+*.xlsx
+
+# Docker
+*.log
