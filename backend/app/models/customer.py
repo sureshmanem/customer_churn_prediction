@@ -11,3 +11,4 @@ class Customer(Base):
     claim_count = Column(Integer)
     payment_history_score = Column(Float)
     churned = Column(Boolean, default=False)
+    churn_risk_score = Column(Float, nullable=True)

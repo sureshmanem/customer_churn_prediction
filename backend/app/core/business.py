@@ -11,7 +11,13 @@ def get_churn_risk(customer_data):
     model = ChurnModel()
     model.load(model_path)
     try:
-        risk_score = model.predict([customer_data])[0]
+        # Extract features in the correct order
+        features = [
+            customer_data["engagement_score"],
+            customer_data["claim_count"],
+            customer_data["payment_history_score"]
+        ]
+        risk_score = model.predict([features])[0]
         return risk_score
     except Exception as e:
         return f"Prediction error: {str(e)}"
